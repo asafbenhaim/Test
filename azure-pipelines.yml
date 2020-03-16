@@ -22,8 +22,6 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-stages: 
-
 - task: WhiteSource Bolt@20
   inputs:
-  displayName: 'white source'
+    cwd: './'
