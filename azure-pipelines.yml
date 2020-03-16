@@ -12,7 +12,7 @@ pool:
 steps:
 - task: WhiteSource Bolt@20
   inputs:
-
+  displayName: 'white source'
 - task: NodeTool@0
   inputs:
     versionSpec: '12.x'
