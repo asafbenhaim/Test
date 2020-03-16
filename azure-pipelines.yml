@@ -10,13 +10,13 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: WhiteSource Bolt@20
+  inputs:
+
 - task: NodeTool@0
   inputs:
     versionSpec: '12.x'
   displayName: 'Install Node.js'
-
-  task: WhiteSource Bolt@20
-  inputs:
 
 - script: |
     npm install
