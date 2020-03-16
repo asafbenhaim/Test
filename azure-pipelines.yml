@@ -15,11 +15,11 @@ steps:
     versionSpec: '12.x'
   displayName: 'Install Node.js'
 
+  task: WhiteSource Bolt@20
+  inputs:
+
 - script: |
     npm install
     echo hello
     npm run build
   displayName: 'npm install and build'
- 
-- task: whitesource.ws-bolt.bolt.wss.WhiteSource Bolt@20
-  displayName: 'White source bolt'
